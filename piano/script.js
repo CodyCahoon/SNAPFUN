@@ -1,22 +1,23 @@
 (function(){
     var s = Snap("#svg");
 
-    var w = $(window).width();
-    var h = $(window).height();
     var height = 250;
-
-
-    var redtop = s.rect(90, 220, 1280, 20);
-    redtop.addClass("redtop");
-    var bg = s.rect(90, height - 10, 1280, 160);
-    bg.addClass("blackfill");
-
     var spacing = 60;
     var base = 100;
+    var width = 1280;
+
+    //Red top
+    var redTop = s.rect(base - 10, height - 30, width, 20);
+    redTop.addClass("redTop");
+
+    //Black background
+    var bg = s.rect(90, height - 10, width, 160);
+    bg.addClass("blackFill");
+
     //Draw the white keys
     for (var i = 0; i < 21; i++){
         var whiteKey = s.rect(base, height, spacing, 130);
-        whiteKey.addClass("whitekey");
+        whiteKey.addClass("whiteKey");
         base += spacing;
     }
 
@@ -29,9 +30,8 @@
             if (i == 2 || i == 6){
                 continue;
             }
-            blackkey = s.rect(base, height, 20, 80);
-            blackkey.addClass("blackkey");
-            console.log(i);
+            blackKey = s.rect(base, height, 20, 80);
+            blackKey.addClass("blackKey");
         }
     }
 }());

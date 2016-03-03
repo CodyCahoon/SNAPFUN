@@ -12,19 +12,19 @@ svg {
      width:100%;
  }
 
-.whitekey{
+.whiteKey{
     stroke:#332E2E;
-    fill:white;
+    fill:#F9F9F9;
 }
 
-.redtop{
+.redTop{
     fill:#C15050;
 }
 
-.blackfill{
+.blackFill{
     fill:#332E2E;
 }
 
-.blackkey{
+.blackKey{
     fill:#524F4F;
 }
