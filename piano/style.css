@@ -1,0 +1,30 @@
+html, body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background:#B3B3B3;
+}
+svg {
+     position:fixed;
+     top:0;
+     left:0;
+     height:100%;
+     width:100%;
+ }
+
+.whitekey{
+    stroke:#332E2E;
+    fill:white;
+}
+
+.redtop{
+    fill:#C15050;
+}
+
+.blackfill{
+    fill:#332E2E;
+}
+
+.blackkey{
+    fill:#524F4F;
+}
