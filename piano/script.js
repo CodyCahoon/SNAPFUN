@@ -1,6 +1,11 @@
 (function(){
     var s = Snap("#svg");
 
+    //Make it scalable
+    s.attr({
+      viewBox: "0 0 1440 800"
+    });
+
     var height = 250;
     var spacing = 60;
     var base = 100;
