@@ -1,0 +1,33 @@
+html, body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background:#B3B3B3;
+}
+svg {
+     position:fixed;
+     top:0;
+     left:0;
+     height:100%;
+     width:100%;
+ }
+
+ .black{
+     fill:#332E2E;
+     stroke:#332E2E;
+ }
+
+ .grey{
+     fill:#524F4F;
+     stroke:#524F4F;
+ }
+
+ .red{
+     fill:#C15050;
+     stroke:#C15050;
+ }
+
+ .white{
+     fill:#F9F9F9;
+     stroke:#F9F9F9;
+ }
