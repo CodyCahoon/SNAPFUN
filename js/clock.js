@@ -4,11 +4,6 @@
     var center = {x:720, y:350};
     var radius = 100;
 
-    //Make it scalable
-    s.attr({
-      viewBox: "0 0 1440 800"
-    });
-
     update();
     setInterval(update, 1000);
     function update(){

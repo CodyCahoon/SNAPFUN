@@ -1,11 +1,6 @@
 (function(){
     var s = Snap("#svg");
 
-    //Make it scalable
-    s.attr({
-      viewBox: "0 0 1440 800"
-    });
-
     var height = 250;
     var spacing = 60;
     var base = 100;
@@ -13,16 +8,20 @@
 
     //Red top
     var redTop = s.rect(base - 10, height - 30, width, 20);
-    redTop.addClass("redTop");
+    redTop.addClass("red");
 
     //Black background
     var bg = s.rect(90, height - 10, width, 160);
-    bg.addClass("blackFill");
+    bg.addClass("black");
 
     //Draw the white keys
     for (var i = 0; i < 21; i++){
         var whiteKey = s.rect(base, height, spacing, 130);
-        whiteKey.addClass("whiteKey");
+        whiteKey.attr({
+            fill: "#F9F9F9",
+            stroke: "black",
+            strokeWidth: 1
+        })
         base += spacing;
     }
 
@@ -36,7 +35,7 @@
                 continue;
             }
             blackKey = s.rect(base, height, 20, 80);
-            blackKey.addClass("blackKey");
+            blackKey.addClass("grey");
         }
     }
 }());
