@@ -9,8 +9,6 @@
     function update(){
         s.clear();
         var currTime = new Date();
-        console.log(currTime.getSeconds());
-
 
         //Draw back circles/frame
         var backFrame = s.circle(center.x, center.y, radius * 1.7, radius * 1.7);
